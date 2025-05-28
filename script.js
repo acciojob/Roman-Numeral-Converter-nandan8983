@@ -11,13 +11,12 @@ function convertToRoman(num) {
 
   //your code here
   const romanNumerals = Object.values(obj).reverse();
-
   let result = '';
 
   for (let [symbol, value] of romanNumerals) {
     while (num >= value) {
-      result += symbol;  
-      num -= value;     
+      result += symbol;
+      num -= value;
     }
   }
 
